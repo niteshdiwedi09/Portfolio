@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Nitesh Diwedi, Computer Science student.">
+  <title>Nitesh Diwedi | Portfolio</title>
+  <style>
+    :root {
+      --bg: #0b1020; --panel: #121a2e; --text: #edf2ff;
+      --muted: #aab6d3; --accent: #72e0c1; --line: #26324d;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0; font-family: Inter, Segoe UI, Arial, sans-serif;
+      background: radial-gradient(circle at 85% 5%, #1b3150 0, transparent 30%), var(--bg);
+      color: var(--text); line-height: 1.6;
+    }
+    a { color: inherit; text-decoration: none; }
+    .wrap { width: min(1050px, 90%); margin: auto; }
+    header { padding: 22px 0; border-bottom: 1px solid var(--line); }
+    nav { display: flex; justify-content: space-between; align-items: center; gap: 20px; }
+    .logo { font-weight: 800; letter-spacing: .5px; }
+    .logo span { color: var(--accent); }
+    .navlinks { display: flex; flex-wrap: wrap; gap: 20px; color: var(--muted); font-size: .95rem; }
+    .navlinks a:hover, .textlink:hover { color: var(--accent); }
+    .hero { padding: 95px 0 80px; display: grid; grid-template-columns: 1.5fr .8fr; gap: 45px; align-items: center; }
+    .eyebrow { color: var(--accent); text-transform: uppercase; letter-spacing: 2px; font-size: .78rem; font-weight: 700; }
+    h1 { font-size: clamp(2.5rem, 6vw, 4.8rem); line-height: 1.05; margin: 14px 0 18px; }
+    h1 span { color: var(--accent); }
+    .intro { color: var(--muted); font-size: 1.12rem; max-width: 620px; }
+    .actions { display: flex; flex-wrap: wrap; gap: 13px; margin-top: 28px; }
+    .btn { display: inline-block; padding: 11px 18px; border-radius: 9px; font-weight: 700; border: 1px solid var(--accent); }
+    .primary { background: var(--accent); color: #07131b; }
+    .secondary { color: var(--accent); }
+    .profile-card { background: linear-gradient(145deg, #17243d, #10182a); border: 1px solid var(--line); border-radius: 20px; padding: 28px; box-shadow: 0 18px 55px #0005; }
+    .avatar { width: 88px; height: 88px; display: grid; place-items: center; border-radius: 24px; background: #203c4b; color: var(--accent); font-size: 2rem; font-weight: 800; }
+    .profile-card h2 { margin: 18px 0 5px; }
+    .profile-card p { color: var(--muted); margin: 0; }
+    .quick { display: flex; gap: 18px; flex-wrap: wrap; margin-top: 20px; color: var(--muted); font-size: .9rem; }
+    section { padding: 55px 0; }
+    .section-title { font-size: 2rem; margin: 0 0 8px; }
+    .section-sub { color: var(--muted); margin: 0 0 25px; }
+    .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+    .card { background: var(--panel); border: 1px solid var(--line); border-radius: 15px; padding: 23px; }
+    .card h3 { margin: 0 0 9px; }
+    .card p { color: var(--muted); margin: 0; }
+    .tags { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 16px; }
+    .tag { background: #1d2a42; border: 1px solid #30405e; color: #c9d6f3; padding: 5px 10px; border-radius: 20px; font-size: .82rem; }
+    .contact { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px; }
+    footer { border-top: 1px solid var(--line); color: var(--muted); padding: 25px 0; font-size: .9rem; }
+    @media (max-width: 720px) {
+      .hero { grid-template-columns: 1fr; padding: 65px 0; }
+      .grid { grid-template-columns: 1fr; }
+      nav { align-items: flex-start; flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <nav>
+        <a class="logo" href="#home">NITESH<span>.</span></a>
+        <div class="navlinks">
+          <a href="#about">About</a><a href="#skills">Skills</a>
+          <a href="#projects">Projects</a><a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <section class="hero" id="home">
+        <div>
+          <div class="eyebrow">Computer Science Student</div>
+          <h1>Hi, I'm Nitesh<br><span>Diwedi.</span></h1>
+          <p class="intro">I am a Computer Science student interested in software development, Java programming, data structures and building useful real-world projects.</p>
+          <div class="actions">
+            <a class="btn primary" href="#projects">View My Projects</a>
+            <a class="btn secondary" href="#contact">Contact Me</a>
+          </div>
+        </div>
+        <aside class="profile-card">
+          <div class="avatar">ND</div>
+          <h2>Nitesh Diwedi</h2>
+          <p>B.Tech — Computer Science & Engineering (AI & ML)</p>
+          <div class="quick"><span>📍 India</span><span>💻 Developer in progress</span></div>
+        </aside>
+      </section>
+
+      <section id="about">
+        <h2 class="section-title">About Me</h2>
+        <p class="section-sub">A little introduction</p>
+        <div class="card">
+          <p>I am currently learning and improving my programming skills through coursework and hands-on projects. I enjoy solving problems, exploring technology and turning ideas into practical applications. My current focus is Java, Data Structures and Algorithms, and software development.</p>
+        </div>
+      </section>
+
+      <section id="skills">
+        <h2 class="section-title">Skills & Technologies</h2>
+        <p class="section-sub">Tools and concepts I am learning and working with</p>
+        <div class="card">
+          <div class="tags">
+            <span class="tag">Java</span><span class="tag">Data Structures</span>
+            <span class="tag">Algorithms</span><span class="tag">HTML</span>
+            <span class="tag">CSS</span><span class="tag">JavaScript</span>
+            <span class="tag">Git</span><span class="tag">GitHub</span>
+            <span class="tag">SQL</span><span class="tag">Problem Solving</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-sub">A selection of my learning and development work</p>
+        <div class="grid">
+          <article class="card">
+            <h3>Student Management System</h3>
+            <p>A Java-based project concept for managing student records, including adding, viewing, updating and deleting student information.</p>
+            <div class="tags"><span class="tag">Java</span><span class="tag">CRUD</span><span class="tag">OOP</span></div>
+            <p style="margin-top:16px"><a class="textlink" href="https://github.com/YOUR-USERNAME/YOUR-REPOSITORY" target="_blank" rel="noopener">View on GitHub ↗</a></p>
+          </article>
+          <article class="card">
+            <h3>More Projects Coming Soon</h3>
+            <p>I am continuously building projects to strengthen my development skills. Check my GitHub profile for new work and updates.</p>
+            <div class="tags"><span class="tag">Learning</span><span class="tag">Building</span></div>
+            <p style="margin-top:16px"><a class="textlink" href="https://github.com/YOUR-USERNAME" target="_blank" rel="noopener">Visit GitHub ↗</a></p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="card contact">
+          <div>
+            <h2 class="section-title">Let's Connect</h2>
+            <p class="section-sub" style="margin-bottom:0">Have an opportunity or project idea? Feel free to reach out.</p>
+          </div>
+          <div class="actions" style="margin-top:0">
+            <a class="btn primary" href="mailto:YOUR-EMAIL@example.com">Email Me</a>
+            <a class="btn secondary" href="https://github.com/YOUR-USERNAME" target="_blank" rel="noopener">GitHub Profile</a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer><div class="wrap">© <span id="year"></span> Nitesh Diwedi. Built with HTML & CSS.</div></footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
